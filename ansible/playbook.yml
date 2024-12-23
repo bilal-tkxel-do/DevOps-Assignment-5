@@ -1,8 +1,0 @@
-- name: Install Node.js
-  hosts: localhost
-  become: true
-  roles:
-    - role: geerlingguy.nodejs
-  vars:
-    nodejs_version: "18.x" 
-
