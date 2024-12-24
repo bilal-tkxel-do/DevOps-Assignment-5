@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_key_pair" "test_key" {
   key_name   = var.ssh_key_name
-  public_key = file(var.public_key_path) # Use the public key path from the variable
+  public_key = file(var.public_key_path)
 }
 
 resource "aws_security_group" "test_sg" {
